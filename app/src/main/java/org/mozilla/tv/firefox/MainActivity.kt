@@ -208,7 +208,7 @@ class MainActivity : LocaleAwareAppCompatActivity(), OnUrlEnteredListener, Media
             context.serviceLocator.engineViewCache.getEngineView(context, attrs) {
                 setupForApp()
             }
-        } else super.onCreateView(name, context, attrs)
+        } else super.onCreateView(parent, name, context, attrs)
     }
 
     override fun onBackPressed() {
